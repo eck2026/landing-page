@@ -74,6 +74,27 @@
 
     </div>
 
+    const dropdownBtn=document.querySelector(".dropdown-btn");
+const dropdownMenu=document.querySelector(".dropdown-content");
+
+dropdownBtn.addEventListener("click",function(){
+
+    if(dropdownMenu.style.display==="block"){
+
+        dropdownMenu.style.display="none";
+        dropdownBtn.innerHTML="Program Pelatihan ▼";
+
+    }else{
+
+        dropdownMenu.style.display="block";
+        dropdownBtn.innerHTML="Program Pelatihan ▲";
+
+    }
+
+});
+
+</script>
+
 </body>
 
 </html>
