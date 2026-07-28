@@ -226,6 +226,20 @@ a:active{
 
     margin:8px 0;
 
+    background:#dbeafe;      /* Light blue */
+
+    border:1px solid #93c5fd;
+
+    color:#1e3a8a;
+
+}
+
+.dropdown-content a:hover{
+
+    background:#bfdbfe;
+
+}
+
 }
 
 /* ==========================================
