@@ -64,8 +64,7 @@ body{
 
     border:1px solid #dddddd;
 
-    box-shadow:
-        0 20px 60px rgba(0,0,0,.25);
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
 
 }
 
@@ -90,6 +89,24 @@ body{
 }
 
 /* ==========================================
+   PARTNER LOGOS
+========================================== */
+
+.partners{
+
+    display:block;
+
+    max-width:650px;
+
+    width:100%;
+
+    height:auto;
+
+    margin:15px auto 25px auto;
+
+}
+
+/* ==========================================
    TEXT
 ========================================== */
 
@@ -110,22 +127,6 @@ p{
     font-size:18px;
 
     margin-bottom:30px;
-
-}
-
-.section{
-
-    margin-top:35px;
-
-}
-
-.section h2{
-
-    color:#222;
-
-    font-size:28px;
-
-    margin-bottom:18px;
 
 }
 
@@ -163,8 +164,7 @@ a:hover{
 
     transform:translateY(-3px);
 
-    box-shadow:
-        0 10px 25px rgba(0,0,0,.15);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 
 }
 
@@ -175,20 +175,56 @@ a:active{
 }
 
 /* ==========================================
-   PARTNER LOGOS
+   DROPDOWN
 ========================================== */
 
-.partners{
+.dropdown-btn{
 
     display:block;
 
-    max-width:650px;
-
     width:100%;
 
-    height:auto;
+    text-decoration:none;
 
-    margin:15px auto 25px auto;
+    color:#222;
+
+    font-weight:bold;
+
+    background:#eeeeee;
+
+    border:1px solid #dddddd;
+
+    border-radius:15px;
+
+    padding:16px;
+
+    margin:15px 0;
+
+    transition:all .25s ease;
+
+    cursor:pointer;
+
+}
+
+.dropdown-btn:hover{
+
+    background:#dddddd;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.dropdown-content{
+
+    display:none;
+
+}
+
+.dropdown-content a{
+
+    margin:8px 0;
 
 }
 
@@ -214,70 +250,16 @@ a:active{
 
 }
 
-h1{
-
-    font-size:30px;
-
-}
-
-.section h2{
-
-    font-size:22px;
-
-}
-
 .partners{
 
     max-width:220px;
 
 }
 
-   /* ==========================================
-   DROPDOWN
-========================================== */
+h1{
 
-.dropdown-btn{
-
-    width:100%;
-
-    padding:16px;
-
-    margin:15px 0;
-
-    border:none;
-
-    border-radius:15px;
-
-    background:#eeeeee;
-
-    border:1px solid #dddddd;
-
-    color:#222;
-
-    font-size:16px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.25s;
+    font-size:30px;
 
 }
-
-.dropdown-btn:hover{
-
-    background:#dddddd;
-
-}
-
-.dropdown-content{
-
-    display:none;
-
-}
-
-.dropdown-content a{
-
-    margin:8px 0;
 
 }
