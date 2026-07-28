@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Office Link Hub</title>
+    <title>Eldwin Cipta Kompetensi</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -20,80 +20,62 @@
         <source src="bekgron.mp4" type="video/mp4">
     </video>
 
-    <!-- Dark Overlay -->
+    <!-- Overlay -->
     <div class="overlay"></div>
 
     <!-- Main Card -->
     <div class="container">
 
-        <!-- Main Office Logo -->
-        <img src="logoeck.jpg" class="profile" alt="Office Logo">
+        <!-- Logo -->
+        <img src="logoeck.jpg" class="profile" alt="Eldwin Cipta Kompetensi">
 
-        <!-- Office Name -->
+        <!-- Title -->
         <h1>Eldwin Cipta Kompetensi</h1>
 
-        <!-- Partner Logos -->
-        <img src="akredo.jpg" class="partners">
+        <!-- Accreditation Logos -->
+        <img src="akredo.jpg" class="partners" alt="Accreditation Logos">
 
-        <!-- Office Description -->
+        <!-- Description -->
         <p class="subtitle">
-            Eldwin Cipta Kompetensi didirikan sebagai wadah para ahli yang berperan dalam pembangunan negara dan bangsa Indonesia pada umunya dan provinsi Sumatera Utara khususnya untuk dapat menciptakan sumber daya manusia yang berkualitas dan berkompeten
+            Eldwin Cipta Kompetensi didirikan sebagai wadah para ahli yang berperan dalam pembangunan negara dan bangsa Indonesia pada umumnya dan Provinsi Sumatera Utara khususnya untuk dapat menciptakan sumber daya manusia yang berkualitas dan berkompeten.
         </p>
-        
-        <!-- ========================= -->
-        <!-- INFORMATION -->
-        <!-- ========================= -->
-        
-<a href="#">Company Profile</a>
 
-<a href="#">Visi - Misi</a>
+        <!-- Buttons -->
 
-<a href="#">Manajemen Mutu</a>
+        <a href="#">Company Profile</a>
 
-<button class="dropdown-btn">
-    Program Pelatihan ▼
-</button>
+        <a href="#">Visi - Misi</a>
 
-<div class="dropdown-content">
+        <a href="#">Manajemen Mutu</a>
 
-    <a href="#">Unsur Perencanaan Program Pelatihan</a>
+        <!-- Dropdown -->
 
-    <a href="#">Unsur Penyelenggaraan Program Pelatihan</a>
+        <a href="#" class="dropdown-btn" onclick="toggleMenu(event)">
+            📚 Program Pelatihan ▼
+        </a>
 
-    <a href="#">Unsue Evaluasi Program Pelatihan</a>
+        <div id="pelatihan" class="dropdown-content">
 
-    <a href="#">Unsur Hasil Penyelenggaraan Program Pelatihan</a>
+            <a href="#">Unsur Perencanaan Program Pelatihan</a>
 
-    <a href="#">Unsur Pembiayaan Program Pelatihan</a>
+            <a href="#">Unsur Penyelenggaraan Program Pelatihan</a>
 
-    <a href="#">Unsur Sarana Pendukung Program Pelatihan</a>
-    
-</div>
+            <a href="#">Unsur Evaluasi Program Pelatihan</a>
 
-<a href="#">Dokumentasi Kegiatan</a>
+            <a href="#">Unsur Hasil Penyelenggaraan Program Pelatihan</a>
+
+            <a href="#">Unsur Pembiayaan Program Pelatihan</a>
+
+            <a href="#">Unsur Sarana Pendukung Program Pelatihan</a>
+
+        </div>
+
+        <a href="#">Dokumentasi Kegiatan</a>
 
     </div>
 
-    const dropdownBtn=document.querySelector(".dropdown-btn");
-const dropdownMenu=document.querySelector(".dropdown-content");
-
-dropdownBtn.addEventListener("click",function(){
-
-    if(dropdownMenu.style.display==="block"){
-
-        dropdownMenu.style.display="none";
-        dropdownBtn.innerHTML="Program Pelatihan ▼";
-
-    }else{
-
-        dropdownMenu.style.display="block";
-        dropdownBtn.innerHTML="Program Pelatihan ▲";
-
-    }
-
-});
-
-</script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 
