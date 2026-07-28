@@ -1,0 +1,217 @@
+/* =======================================
+   RESET
+======================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+    color:white;
+}
+
+/* =======================================
+   VIDEO BACKGROUND
+======================================= */
+
+#bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    z-index:-2;
+}
+
+/* Very light overlay */
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.08);
+    z-index:-1;
+}
+
+/* =======================================
+   MAIN CARD
+======================================= */
+
+.container{
+
+    width:90%;
+    max-width:520px;
+
+    margin:50px auto;
+
+    padding:35px;
+
+    background:#171717;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.55);
+
+    border:1px solid #2d2d2d;
+
+}
+
+/* =======================================
+   PROFILE
+======================================= */
+
+.profile{
+
+    width:150px;
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid white;
+
+    margin-bottom:20px;
+
+    box-shadow:
+        0 0 30px rgba(255,255,255,.35);
+
+}
+
+/* =======================================
+   TEXT
+======================================= */
+
+h1{
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+p{
+
+    color:#bfbfbf;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+.section{
+
+    margin-top:35px;
+
+}
+
+.section h2{
+
+    color:white;
+
+    font-size:32px;
+
+    margin-bottom:18px;
+
+}
+
+/* =======================================
+   BUTTONS
+======================================= */
+
+a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:bold;
+
+    padding:16px;
+
+    margin:15px 0;
+
+    border-radius:15px;
+
+    background:#2a2a2a;
+
+    border:1px solid #3a3a3a;
+
+    transition:all .25s ease;
+
+}
+
+/* Hover */
+
+a:hover{
+
+    background:#3a3a3a;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(255,255,255,.08);
+
+}
+
+/* Click */
+
+a:active{
+
+    transform:scale(.98);
+
+}
+
+/* =======================================
+   MOBILE
+======================================= */
+
+@media(max-width:600px){
+
+.container{
+
+    width:94%;
+
+    margin:20px auto;
+
+    padding:25px;
+
+}
+
+.profile{
+
+    width:120px;
+    height:120px;
+
+}
+
+h1{
+
+    font-size:32px;
+
+}
+
+.section h2{
+
+    font-size:24px;
+
+}
+
+}
