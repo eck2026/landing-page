@@ -1,20 +1,27 @@
-function toggleMenu(event){
+const dropdowns = document.querySelectorAll(".dropdown-btn");
 
-    event.preventDefault();
+dropdowns.forEach(function(button){
 
-    const menu = document.getElementById("pelatihan");
-    const button = document.querySelector(".dropdown-btn");
+    button.addEventListener("click", function(event){
 
-    if(menu.style.display === "block"){
+        event.preventDefault();
 
-        menu.style.display = "none";
-        button.innerHTML = "Program Pelatihan ▼";
+        const menu = this.nextElementSibling;
 
-    }else{
+        if(menu.style.display === "block"){
 
-        menu.style.display = "block";
-        button.innerHTML = "Program Pelatihan ▲";
+            menu.style.display = "none";
 
-    }
+            this.innerHTML = this.innerHTML.replace("▲","▼");
 
-}
+        }else{
+
+            menu.style.display = "block";
+
+            this.innerHTML = this.innerHTML.replace("▼","▲");
+
+        }
+
+    });
+
+});
