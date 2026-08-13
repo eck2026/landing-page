@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pelatihan BTCLS</title>
+
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <a href="dokumentasi.html" class="back">
+            ← Kembali
+        </a>
+
+        <h1>Pelatihan BTCLS</h1>
+
+        <p>Dokumentasi Pelatihan ATLM</p>
+
+    </header>
+
+
+    <!-- PHOTO GALLERY -->
+
+    <main class="photo-gallery">
+
+
+        <img
+            src="BTCLS-1.JPG"
+            alt="Kegiatan B - Foto 1"
+            onclick="openPhoto(this)"
+        >
+
+
+        <img
+            src="BTCLS-2.JPG"
+            alt="Kegiatan B - Foto 2"
+            onclick="openPhoto(this)"
+        >
+
+
+        <img
+            src="BTCLS-3.JPG"
+            alt="Kegiatan B - Foto 3"
+            onclick="openPhoto(this)"
+        >
+
+
+        <img
+            src="BTCLS-4.JPG"
+            alt="Kegiatan B - Foto 4"
+            onclick="openPhoto(this)"
+        >
+
+     <img
+            src="BTCLS-5.JPG"
+            alt="Kegiatan B - Foto 5"
+            onclick="openPhoto(this)"
+        >
+
+     <img
+            src="BTCLS-6.JPG"
+            alt="Kegiatan B - Foto 6"
+            onclick="openPhoto(this)"
+        >
+
+     <img
+            src="BTCLS-7.JPG"
+            alt="Kegiatan B - Foto 7"
+            onclick="openPhoto(this)"
+        >
+     <img
+            src="BTCLS-8.JPG"
+            alt="Kegiatan B - Foto 8"
+            onclick="openPhoto(this)"
+        >
+
+     <img
+            src="BTCLS-9.JPG"
+            alt="Kegiatan B - Foto 9"
+            onclick="openPhoto(this)"
+        >
+
+     <img
+            src="BTCLS-10.JPG"
+            alt="Kegiatan B - Foto 10"
+            onclick="openPhoto(this)"
+        >
+
+    </main>
+
+
+    <!-- FULLSCREEN PHOTO VIEWER -->
+
+    <div id="photo-viewer" onclick="closePhoto()">
+
+        <span class="close">
+            ×
+        </span>
+
+        <img id="large-photo" src="" alt="">
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function openPhoto(photo) {
+
+            document.getElementById("photo-viewer").style.display = "flex";
+
+            document.getElementById("large-photo").src = photo.src;
+
+        }
+
+
+        function closePhoto() {
+
+            document.getElementById("photo-viewer").style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
