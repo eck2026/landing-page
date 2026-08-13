@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pelatihan DFI</title>
+
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <a href="dokumentasi.html" class="back">
+            ← Kembali
+        </a>
+
+        <h1>Pelatihan DFI</h1>
+
+        <p>Dokumentasi Pelatihan DFI</p>
+
+    </header>
+
+
+    <!-- PHOTO GALLERY -->
+
+    <main class="photo-gallery">
+
+
+        <img
+            src="DFI-1.JPG"
+            alt="Kegiatan C - Foto 1"
+            onclick="openPhoto(this)"
+        >
+
+
+        <img
+            src="DFI-2.JPG"
+            alt="Kegiatan C - Foto 2"
+            onclick="openPhoto(this)"
+        >
+
+
+        <img
+            src="DFI-3.JPG"
+            alt="Kegiatan C - Foto 3"
+            onclick="openPhoto(this)"
+        >
+
+
+        <img
+            src="DFI-4.JPG"
+            alt="Kegiatan C - Foto 4"
+            onclick="openPhoto(this)"
+        >
+
+     <img
+            src="DFI-5.JPG"
+            alt="Kegiatan C - Foto 5"
+            onclick="openPhoto(this)"
+        >
+
+     <img
+            src="DFI-6.JPG"
+            alt="Kegiatan C - Foto 6"
+            onclick="openPhoto(this)"
+        >
+
+     <img
+            src="DFI-7.JPG"
+            alt="Kegiatan C - Foto 7"
+            onclick="openPhoto(this)"
+        >
+ 
+    </main>
+
+
+    <!-- FULLSCREEN PHOTO VIEWER -->
+
+    <div id="photo-viewer" onclick="closePhoto()">
+
+        <span class="close">
+            ×
+        </span>
+
+        <img id="large-photo" src="" alt="">
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function openPhoto(photo) {
+
+            document.getElementById("photo-viewer").style.display = "flex";
+
+            document.getElementById("large-photo").src = photo.src;
+
+        }
+
+
+        function closePhoto() {
+
+            document.getElementById("photo-viewer").style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
