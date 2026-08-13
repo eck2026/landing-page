@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pelatihan USG</title>
+
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <a href="dokumentasi.html" class="back">
+            ← Kembali
+        </a>
+
+        <h1>Pelatihan USG</h1>
+
+        <p>Dokumentasi Pelatihan USG</p>
+
+    </header>
+
+
+    <!-- PHOTO GALLERY -->
+
+    <main class="photo-gallery">
+
+
+        <img
+            src="usg-1.jpeg"
+            alt="Kegiatan J - Foto 1"
+            onclick="openPhoto(this)"
+        >
+
+
+        <img
+            src="usg-2.jpeg"
+            alt="Kegiatan J - Foto 2"
+            onclick="openPhoto(this)"
+        >
+
+
+        <img
+            src="usg-3.jpeg"
+            alt="Kegiatan J - Foto 3"
+            onclick="openPhoto(this)"
+        >
+
+
+        <img
+            src="usg-4.jpeg"
+            alt="Kegiatan J - Foto 4"
+            onclick="openPhoto(this)"
+        >
+
+    
+    </main>
+
+
+    <!-- FULLSCREEN PHOTO VIEWER -->
+
+    <div id="photo-viewer" onclick="closePhoto()">
+
+        <span class="close">
+            ×
+        </span>
+
+        <img id="large-photo" src="" alt="">
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function openPhoto(photo) {
+
+            document.getElementById("photo-viewer").style.display = "flex";
+
+            document.getElementById("large-photo").src = photo.src;
+
+        }
+
+
+        function closePhoto() {
+
+            document.getElementById("photo-viewer").style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
